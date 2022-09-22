@@ -1,7 +1,6 @@
 package ch.heigvd.dai.chill.domain.peronetti;
 
 import ch.heigvd.dai.chill.domain.Bartender;
-import ch.heigvd.dai.chill.domain.wasadigi.PunkIPA;
 import ch.heigvd.dai.chill.protocol.OrderRequest;
 import ch.heigvd.dai.chill.protocol.OrderResponse;
 import org.junit.jupiter.api.Test;
