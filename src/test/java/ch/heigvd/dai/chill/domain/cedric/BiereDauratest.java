@@ -15,8 +15,8 @@ class BiereDauratest {
   @Test
   void thePriceAndNameForPunkIPAShouldBeCorrect() {
     BiereDaura beer = new BiereDaura();
-    assertEquals(beer.getName(), BiereDauratest.NAME);
-    assertEquals(beer.getPrice(), BiereDauratest.PRICE);
+    assertEquals(beer.getName(), BiereDaura.NAME);
+    assertEquals(beer.getPrice(), BiereDaura.PRICE);
   }
 
   @Test
@@ -25,7 +25,7 @@ class BiereDauratest {
     String productName = "ch.heigvd.dai.chill.domain.cedric.BiereDaura";
     OrderRequest request = new OrderRequest(3, productName);
     OrderResponse response = jane.order(request);
-    BigDecimal expectedTotalPrice = BiereDauratest.PRICE.multiply(new BigDecimal(3));
+    BigDecimal expectedTotalPrice = BiereDaura.PRICE.multiply(new BigDecimal(3));
     assertEquals(expectedTotalPrice, response.getTotalPrice());
   }
 
